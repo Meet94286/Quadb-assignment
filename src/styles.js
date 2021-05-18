@@ -10,7 +10,7 @@ module.exports = {
   h1: {
     color: "#66e0ff",
   },
-  name: {
-    color: "#66e0ff",
-  },
+  // name: {
+  //   color: "#66e0ff",
+  // },
 };
