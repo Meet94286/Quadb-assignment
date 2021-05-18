@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
@@ -41,14 +41,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Khush2809/Hodlinfo.git"
+ 
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Khush2809/Hodlinfo/issues"
-  },
-  "homepage": "https://github.com/Khush2809/Hodlinfo#readme"
+
 }
