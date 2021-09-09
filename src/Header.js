@@ -4,27 +4,25 @@ import "./Header.css";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
 import { Form, Button, Container, Col, Row, Spinner } from "react-bootstrap";
-import styles from "./styles";
+import img from "./img.png";
 
 const Header = () => {
-  // const [darkMode, setdarkMode] = useState(false);
-  // const [timer, setTimer] = useState(59)
+//   const [darkMode, setdarkMode] = useState(true);
+//  const [timer, setTimer] = useState(59)
 
   return (
-    <div className="container-fluid mx-3 my-3" style={styles.container}>
-      <Container fluid xxl className="">
-        <Row>
-          <Col lg="4" className="my-4 ">
-            {" "}
-            <h1 className="name" style={styles.name}>
-              HODLINFO
-            </h1>
+    <div className="container-fluid mx-3 my-3">
+      <Container >
+        <Row className="header-div">
+          <Col lg="4" className="my-4 " >
+          
+            <div><img src={img} className="logo"/></div>
             <div>
-              <h3>Powered By Finstreet</h3>
+              <h3 className="tagline">Powered By<span ><a className="text" target="_blank" href="https://www.finstreet.in/">Finstreet</a></span> </h3>
             </div>
           </Col>
           <Col lg="4" className="my-5 ">
-            <Row className="d-flex justify-content-center">
+            <Row className="d-flex justify-content-center" id="row">
               <Col xs lg="3">
                 <Dropdown>
                   <Dropdown.Toggle variant="light" id="dropdown-basic">
@@ -34,7 +32,7 @@ const Header = () => {
                   <Dropdown.Menu>
                     <Dropdown.Item
                       href="https://hodlinfo.com/BTC-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       INR
                     </Dropdown.Item>
@@ -50,73 +48,73 @@ const Header = () => {
                   <Dropdown.Menu>
                     <Dropdown.Item
                       href="https://hodlinfo.com/BTC-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       BTC
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/ETH-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       ETH
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/USDT-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       USDT
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/XRP-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       XRP
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/TRX-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       TRX
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/DASH-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       DASH
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/ZEC-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       ZEC
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/XEM-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       XEM
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/IOST-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       IOST
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/WIN-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       WIN
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/BTT-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       BTT
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://hodlinfo.com/WRX-INR"
-                      target="_khush"
+                      target="_blank"
                     >
                       WRX
                     </Dropdown.Item>
@@ -127,7 +125,7 @@ const Header = () => {
                 <Button
                   variant="light"
                   href="https://wazirx.com/invite/sp6pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn"
-                  target="_khush"
+                  target="_blank"
                 >
                   BUY BTC
                 </Button>
@@ -136,42 +134,19 @@ const Header = () => {
           </Col>
           <Col lg="4" className="my-5">
             <Col lg="2"> </Col>
-            <Col lg="6">
+            <Col lg="6" className="tele-div">
               <Button
                 variant="info"
                 href="https://hodlinfo.com/connect/telegram"
-                target="_khush"
+                target="_blank"
                 className="text-white justify-content-end"
+                id="button"
               >
                 <FaTelegramPlane />
-                Connect Telegram
+               <span style={{marginLeft:"5px",fontWeight:"600"}} >Connect Telegram</span> 
               </Button>
             </Col>
-            <Col lg="2">
-              {/* <div className="switch-checkbox">
-                  <label className="switch">
-                    <input
-                      type="checkbox"
-                      onChange={() => setdarkMode(!darkMode)}
-                    />
-                    <span className="slider round"></span>
-                  </label>
-                </div> */}
-              {/* <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="flexSwitchCheckChecked"
-                    checked
-                    onChange={() => setdarkMode(!darkMode)}
-                  />
-                  <label
-                    class="form-check-label"
-                    for="flexSwitchCheckChecked"
-                  ></label>
-                </div> */}
-            </Col>
-          </Col>
+           </Col>
         </Row>
       </Container>
     </div>

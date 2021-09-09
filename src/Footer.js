@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./styles";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -18,7 +17,7 @@ const Footer = () => {
             <div className=" d-flex justify-content-end text-muted">
               <a>Support</a>
             </div>
-          </Col>
+          </Col>  
         </Row>
       </Container>
     </div>

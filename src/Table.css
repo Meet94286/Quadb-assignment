@@ -1,0 +1,65 @@
+#table-div{
+    margin-right: 35px;
+    margin-left: 8px;
+    margin-top: 50px;
+}
+#out-div{
+    margin-top: 10px !important;
+}
+.logo-div{
+   width: 20%;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 0px;
+}
+.coin-name{
+    margin-left: 15px;
+    font-weight: 800;
+    
+}
+.name-div{
+    margin-left: 11%;
+    display: block;
+    width: 10%;
+  margin-top: 6px;
+    
+}
+#price{
+    margin-top: 8.7px;
+    margin-left: 90px;
+}
+
+#detail-div{
+    display: flex;
+    width: 250% !important;
+}
+.name1-div{
+    margin-left: 10rem;
+    margin-top: 7px;
+}
+#last-div{
+    margin-top: -40px;
+    margin-left: 80px;
+   
+}
+.sr-div{
+    margin-top: 10px;
+    margin-left: 12px;
+}
+#buy-div{
+    margin-left: 5rem;
+}
+#savings-div{
+    margin-left: 8rem;
+}
+.out-row-div{
+    width:100%;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+.inner-div{
+    display: flex;
+}
+div{
+    font-weight: 600;
+}

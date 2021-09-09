@@ -1,23 +1,24 @@
 import React from "react";
 import "./rates.css";
-import styles from "./styles";
-import { NavLink, Button, Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import { BiRupee } from "react-icons/bi";
 
 const Rates = () => {
+
+ 
   return (
-    <div>
-      <div className="container-fluid mx-3 my-3" style={styles.container}>
+    <div style={{display:"flex",justifyContent:"space-around" }}>
+      <div className="container-fluid mx-3 my-3" >
         <Container>
           <Row>
             <Col className="my-5">
-              <h1 className="h1" style={styles.h1}>
+              <h1 className="h1" id="h1"  >
                 0.26%
               </h1>
               <h5 className="text-muted">5 MINS</h5>
             </Col>
             <Col className="my-5">
-              <h1 className="h1" style={styles.h1}>
+              <h1 className="h1" id="h1" >
                 1.14%
               </h1>
               <h5 className="text-muted">1 HOUR</h5>
@@ -25,7 +26,7 @@ const Rates = () => {
             <Col xs={6}>
               <div className="text-center">
                 <h5 className="mx-auto">BEST PRICE TO TRADE</h5>
-                <h1 className="main">
+                <h1 className="best">
                   <BiRupee /> 37,67,878
                 </h1>
                 <h5 className="text-muted ">
@@ -35,13 +36,13 @@ const Rates = () => {
             </Col>
             <Col className="my-5">
               {" "}
-              <h1 className="h1" style={styles.h1}>
+              <h1 className="h1" id="h1" >
                 5.9%
               </h1>
               <h5 className="text-muted">1 DAY</h5>
             </Col>
             <Col className="my-5">
-              <h1 className="h1" style={styles.h1}>
+              <h1 className="h1" id="h1" >
                 30.36%
               </h1>
               <h5 className="text-muted">7 DAYS</h5>
